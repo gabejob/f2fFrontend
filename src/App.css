@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+#image-disp
+{
+    margin:auto;
+    width: 90%;
+    height: 90%;
+    background-color:white;
+    border-radius: 1rem;
+}
+#results-view
+{
+    margin-top: 16px;
+}
+#content-container
+{
+    margin-top: 50px;
+}
+#res-view
+{
+    margin: auto;
+    width: 30%;
+}
+.pic-card
+{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    background-color:rgb(255, 255, 255);  
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+}
+.baseplate, body, html, #root
+{
+    background-color:aliceblue;
+    height: 105%;
+    min-height: 100%;
+    margin:auto;
+    margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropzone {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: #eeeeee;
+    border-style: dashed;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    outline: none;
+    transition: border .24s ease-in-out;
+    margin: auto;
+    height: 200px;
+    width: 600px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropzone-dragging
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: #f7f5f5;
+    border-style: dashed;
+    background-color: #deebf8;
+    color: #fbfbfb;
+    outline: none;
+    transition: border .24s ease-in-out;
+    margin: auto;
+    height: 200px;
+    width: 600px;
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dropzone-dragging:hover
+{
+  
+    background-color: #deebf8;
+    border-color: #f7f5f5;
+    color: #fbfbfb;
 }
-
-.App-link {
-  color: #61dafb;
+#try-again
+{
+    margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropzone:hover
+{
+    cursor: pointer;
+    background-color: #deebf8;
+    border-color: #f7f5f5;
+    color: #fbfbfb;
 }
