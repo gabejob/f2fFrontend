@@ -94,7 +94,7 @@ const UseStateObject = () => {
     var fdata = new FormData();
     fdata.append("File", picture);
 
-    var URL = "http://ec2-54-215-64-155.us-west-1.compute.amazonaws.com/Home/Create";
+    var URL = "http://face2fruitbackend-dev.eba-i3ytc6vc.us-east-1.elasticbeanstalk.com/Home/Create";
 
     $.ajax({
       type: "post",
