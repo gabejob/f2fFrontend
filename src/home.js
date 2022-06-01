@@ -7,8 +7,7 @@ const MainContent = () => {
   const [image, setImage] = useState(null);
   const [src, setSrc] = useState(null);
   const [results, setResults] = useState(null);
-  const URL =
-    "http://f2fbackv1-dev.eba-bwcf6ph9.us-east-1.elasticbeanstalk.com/api/Home/Create";
+  const URL = "https://apif2f.com/api/Home/Create";
 
   const Dropzone = () => {
     const onDrop = useCallback((acceptedFiles) => {
