@@ -9,6 +9,10 @@ const MainContent = () => {
   const [results, setResults] = useState(null);
   const URL = "https://apif2f.com/api/Home/Create";
 
+  useEffect(() => {
+    document.title = "Face2Fruit";
+  }, []);
+
   const Dropzone = () => {
     const onDrop = useCallback((acceptedFiles) => {
       if (acceptedFiles.length > 1) {
